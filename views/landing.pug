@@ -1,0 +1,13 @@
+doctype html
+html(lang='en')
+  include global/header.pug
+  body
+    div(class='container max-auto')
+      h2(class='text-center text-4xl font-black') Astronomy Picture of the Day
+      div(class='flex justify-around flex-row')
+        div(class='basis-1/2 text-left text-base font-normal')
+          p #{title}
+          p #{date}
+          p #{explanation}
+        div(class='basis-1/2')
+          img(class='w-1/2' src=`${hdurl}` alt='Astronomy Picture of the Day')
